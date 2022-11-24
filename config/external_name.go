@@ -36,3 +36,13 @@ func ExternalNameConfigured() []string {
 	}
 	return l
 }
+
+// ExternalNameConfigs contains all external name configurations for this
+// provider.
+var ExternalNameConfigs = map[string]config.ExternalName{
+	// Name is a parameter and it is also used to import the resource.
+	"github_repository": config.NameAsIdentifier,
+	// The import ID consists of several parameters. We'll use branch name as
+	// the external name.
+	"github_branch": config.TemplatedStringAsIdentifier("branch", "{{ .parameters.repository }}:{{ .external_name }}:{{ .parameters.source_branch }}"),
+}
