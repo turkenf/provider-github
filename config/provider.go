@@ -11,8 +11,8 @@ import (
 	ujconfig "github.com/upbound/upjet/pkg/config"
 
 	"github.com/turkenf/provider-github/config/null"
-	"github.com/myorg/provider-github/config/branch"
-	"github.com/myorg/provider-github/config/repository"
+	"github.com/turkenf/provider-github/config/branch"
+	"github.com/turkenf/provider-github/config/repository"
 )
 
 const (

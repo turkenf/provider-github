@@ -13,7 +13,7 @@ func Configure(p *config.Provider) {
         // object, we can build cross resource referencing. See
         // repositoryRef in the example in the Testing section below.
         r.References["repository"] = config.Reference{
-            Type: "github.com/myorg/provider-github/apis/repository/v1alpha1.Repository",
+            Type: "github.com/turkenf/provider-github/apis/repository/v1alpha1.Repository",
         }
     })
 }
